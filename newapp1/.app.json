@@ -6,13 +6,65 @@
       "name": "homeView",
       "components": [],
       "title": "Home View",
+      "addToNavigation": false
+    },
+    {
+      "type": "NativeScript:view",
+      "name": "loginView",
+      "components": [
+        {
+          "type": "NativeScript:form",
+          "components": [
+            {
+              "type": "NativeScript:editableListForm",
+              "components": [
+                {
+                  "type": "NativeScript:editableListFormField",
+                  "name": "txtUserName",
+                  "title": "User Name:",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "text",
+                  "dataBinding": "UserName"
+                },
+                {
+                  "type": "NativeScript:editableListFormField",
+                  "name": "txtPassword",
+                  "title": "Password:",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "text",
+                  "dataBinding": "PassWord"
+                }
+              ],
+              "name": "editableListForm",
+              "formType": "add"
+            }
+          ],
+          "name": "loginViewModel",
+          "enableDataBinding": true,
+          "dataProvider": "backendServices",
+          "collection": "User",
+          "submitButton": "Login"
+        }
+      ],
+      "title": "Login",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "bookmarks"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "NativeScript:dataProvider",
+      "name": "backendServices",
+      "source": "everlive",
+      "everliveKey": "mf5hyzsa1fjdb5bu",
+      "offlineStorage": true,
+      "title": "Backend Services"
+    }
+  ],
   "name": "nativeScriptApp",
-  "navigation": "listmenu",
-  "transition": "none",
+  "navigation": "none",
+  "view": "loginView",
   "skin": "native"
 }

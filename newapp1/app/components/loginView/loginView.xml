@@ -1,0 +1,58 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded" id="loginViewScreen" cssClass="screen">
+    <Page.actionBar>
+        <widgets:action-bar />
+    </Page.actionBar>
+
+    <StackLayout>
+
+        <ScrollView>
+            <StackLayout>
+
+
+                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--text" id="txtUserNameField">
+
+
+                    <Label text="User Name:" cssClass="label" col="0" row="1" />
+
+
+                    <TextField col="1" row="1" text="{{ txtUserName }}" />
+
+                    <!-- txtUserName content -->
+
+                </GridLayout>
+
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+
+                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--text" id="txtPasswordField">
+
+
+                    <Label text="Password:" cssClass="label" col="0" row="1" />
+
+
+                    <TextField col="1" row="1" text="{{ txtPassword }}" />
+
+                    <!-- txtPassword content -->
+
+                </GridLayout>
+
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                <!-- loginViewModel additional fields -->
+
+
+                <GridLayout columns="*, *" rows="auto" cssClass="form-buttons">
+
+
+                    <widgets:button col="1" text="Login" tap="{{onloginViewModelFormSubmit}}" />
+
+                </GridLayout>
+            </StackLayout>
+        </ScrollView>
+        <!-- additional view content -->
+
+        <!-- START_CUSTOM_CODE_loginView -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_loginView -->
+    </StackLayout>
+</Page>
