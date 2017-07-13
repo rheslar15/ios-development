@@ -11,8 +11,7 @@ var isInit = true,
     viewModel = require('./loginView-view-model');
 
 function onRequestSuccess() {
-    alert("user Logged in");
-    helpers.navigate("components/homeView/homeView");
+
 }
 
 function onRequestFail(err) {
@@ -25,9 +24,9 @@ function saveData() {
 
     data.save({
 
-            UserName: viewModel.get('txtUserName'),
+            UserName: viewModel.get('textUserName'),
 
-            PassWord: viewModel.get('txtPassword'),
+            PassWord: viewModel.get('textPassWord'),
 
             // save properties
 

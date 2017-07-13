@@ -19,9 +19,9 @@ ViewModel = new Observable({
         });
     },
 
-    txtUserName: '',
+    textUserName: '',
 
-    txtPassword: '',
+    textPassWord: '',
 
     // additional properties
 

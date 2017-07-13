@@ -20,20 +20,18 @@
               "components": [
                 {
                   "type": "NativeScript:editableListFormField",
-                  "name": "txtUserName",
+                  "name": "textUserName",
                   "title": "User Name:",
-                  "inputType": "text",
-                  "titlePosition": "left",
-                  "inputTextType": "text",
+                  "inputType": "textArea",
+                  "wideFieldTitlePosition": "top",
                   "dataBinding": "UserName"
                 },
                 {
                   "type": "NativeScript:editableListFormField",
-                  "name": "txtPassword",
+                  "name": "textPassWord",
                   "title": "Password:",
-                  "inputType": "text",
-                  "titlePosition": "left",
-                  "inputTextType": "text",
+                  "inputType": "textArea",
+                  "wideFieldTitlePosition": "top",
                   "dataBinding": "PassWord"
                 }
               ],
