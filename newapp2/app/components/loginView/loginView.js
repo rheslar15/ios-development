@@ -46,7 +46,7 @@ function pageLoaded(args) {
 
     helpers.platformInit(page);
     page.bindingContext = viewModel;
-    page.cssFile = "login.component.css";
+   
     // additional pageLoaded
 
     if (isInit) {
