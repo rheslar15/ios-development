@@ -24,11 +24,9 @@ function saveData() {
 
     data.save({
 
-            UserName: viewModel.get('txtUserName'),
+            UserName: viewModel.get('textUserName'),
 
-            PassWord: viewModel.get('txtPassword'),
-
-            UserName: viewModel.get('textAreaField'),
+            PassWord: viewModel.get('textPassWord'),
 
             // save properties
 
@@ -48,7 +46,7 @@ function pageLoaded(args) {
 
     helpers.platformInit(page);
     page.bindingContext = viewModel;
-    page.addCss("loginView.component.css");
+    page.cssFile = "login.component.css";
     // additional pageLoaded
 
     if (isInit) {

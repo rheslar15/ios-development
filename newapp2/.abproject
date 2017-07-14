@@ -1,13 +1,13 @@
 {
-  "ProjectName": "newapp1",
+  "ProjectName": "newapp2",
   "ProjectGuid": "a62b6d23-2dc7-45e5-bce0-347238dae3b2",
   "projectVersion": 1,
   "AppIdentifier": "com.telerik.newapp1",
-  "DisplayName": "newapp1",
+  "DisplayName": "newapp2",
   "Author": "",
-  "Description": "newapp1",
-  "BundleVersion": "1.1",
-  "AndroidVersionCode": "1",
+  "Description": "newapp2",
+  "BundleVersion": "1.2",
+  "AndroidVersionCode": "2",
   "iOSDeviceFamily": [
     "1",
     "2"
