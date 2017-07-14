@@ -1,4 +1,4 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded" id="loginViewScreen" cssClass="screen" actionBarHidden="True" >
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded" id="loginViewScreen" cssClass="screen">
     <Page.actionBar>
         <widgets:action-bar />
     </Page.actionBar>
@@ -26,12 +26,13 @@
                 <!-- loginViewModel additional fields -->
 
 
-                <GridLayout rows="auto, auto" >
+                <GridLayout columns="*, *" rows="auto" cssClass="form-buttons">
 
 
-                    <widgets:button text="Login" tap="{{onloginViewModelFormSubmit}}" cssClass="login-button" />
+                    <widgets:button col="1" text="Login" tap="{{onloginViewModelFormSubmit}}" cssClass="login-button"/>
 
                 </GridLayout>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
         <!-- additional view content -->
