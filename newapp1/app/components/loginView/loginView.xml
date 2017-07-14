@@ -9,28 +9,18 @@
             <StackLayout>
 
 
-                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textArea" id="textUserNameField">
+                <GridLayout rows="auto, auto" cssClass="main-container" id="textUserNameField">
 
 
-                    <Label text="User Name:" cssClass="label" col="0" row="0" />
-
-                    <TextField colSpan="1" row="0" col="1" textWrap="false" height="30" width="200" hint="User Name" autocorrect="false" autocapitalizationType="none"  text="{{ textUserName }}"  />
+                   
+                    <TextField row="0" textWrap="false" height="40" width="200" hint="User Name" autocorrect="false" autocapitalizationType="none"  text="{{ textUserName }}"  />
                     <!-- textUserName content -->
-
+                     <TextField row="1"  textWrap="false" textWrap="false" height="40" width="200" hint="Password" autocorrect="false" autocapitalizationType="none" text="{{ textPassWord }}" />
                 </GridLayout>
 
-                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                
 
-
-                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item field field--textArea" id="textPassWordField">
-
-
-                    <Label text="Password:" cssClass="label" col="0" row="0" />
-
-                    <TextField row="0" col="1 textWrap="false" textWrap="false" height="30" width="200" hint="Password" autocorrect="false" autocapitalizationType="none" text="{{ textPassWord }}" />
-                    <!-- textPassWord content -->
-
-                </GridLayout>
+                
 
                 <StackLayout cssClass="form-item-border" height="1"></StackLayout>
                 <!-- loginViewModel additional fields -->
