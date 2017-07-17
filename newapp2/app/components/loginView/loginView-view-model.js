@@ -1,6 +1,7 @@
 'use strict';
 var ViewModel,
     Observable = require('data/observable').Observable;
+    var Sqlite = require("nativescript-sqlite");
 // additional requires
 
 ViewModel = new Observable({
