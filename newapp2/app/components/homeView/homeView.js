@@ -15,7 +15,6 @@ function pageLoaded(args) {
 
     if (isInit) {
         isInit = false;
-
         // additional pageInit
     }
 }

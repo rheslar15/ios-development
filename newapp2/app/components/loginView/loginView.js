@@ -11,7 +11,7 @@ var isInit = true,
     viewModel = require('./loginView-view-model');
 
 function onRequestSuccess() {
-
+   alert("login succss")
 }
 
 function onRequestFail(err) {
@@ -34,9 +34,19 @@ function saveData() {
         .then(onRequestSuccess.bind(this))
         .catch(onRequestFail.bind(this));
 }
+function tryLoginServer()
+{
+    alert("tryLoginServer");
+
+    // goto home screen
+    helpers.navigate("components/homeView/homeView")
+}
 
 function onloginViewModelFormSubmit() {
     saveData();
+
+   
+    tryLoginServer();
 }
 
 // additional functions
@@ -46,7 +56,7 @@ function pageLoaded(args) {
 
     helpers.platformInit(page);
     page.bindingContext = viewModel;
-   
+    
     // additional pageLoaded
 
     if (isInit) {

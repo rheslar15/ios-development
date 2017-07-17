@@ -1,6 +1,8 @@
 .main-container {
-  height: 360;
+  height: 450;
   width: 275;
+  
+  
 }
 .initial-label {
   font-size: 32;
@@ -23,6 +25,14 @@ TextField {
   height: 200;
   text-transform: uppercase;
 }
+
+.input-border
+{
+   
+    background-color: white;
+    border-color: black;
+    border-width: 1;
+}
 .forgot-password-label {
   font-size: 13;
   text-transform: uppercase;
@@ -30,7 +40,24 @@ TextField {
 .logo-container Image {
   top: 90;
 }
-
 .login-button{
-    vertical-align: center;
+    width: 250;
+    text-align:center;
+    border-radius: 10;
+    border-color: black;
+    border-width: 1;
+    color: black;
+    background-color: #e0e0e0;
+}
+.top-layout
 {
+    padding-top: 20;
+}
+
+.screen_layout
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("res://background1");
+}
